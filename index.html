@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-    <div class="container-fluid border justify content">
+    <div class="container-fluid border">
       <div class="row bg-secondary text-dark bg-opacity-10 mb-2 p-2">
         <div class="col-12">
           <label>
@@ -28,7 +28,9 @@
           </label>
         </div>
       </div>
-      <div class="row bg-danger text-red bg-opacity-25 mx-auto p-2 rounded mb-2">
+      <div
+        class="row bg-danger text-red bg-opacity-25 mx-auto p-2 rounded mb-2"
+      >
         <div class="col-12">missing field red message</div>
       </div>
       <div class="row d-flex">
@@ -81,9 +83,9 @@
           />
         </div>
       </div>
-      <div class="row d-flex">
-        <div class="row d-flex">
-          <div class="col-6">
+      <div class="row m-0">
+        <div class="row d-flex m-0 p-0">
+          <div class="col-6 ps-0">
             <label for="City">City</label>
             <input
               type="text"
@@ -92,11 +94,11 @@
               aria-describedby="inputGroup-sizing-sm"
             />
           </div>
-          <div class="col-3">
+          <div class="col-6 d-flex justify-content-between pe-0">
             <!-- <label for="state"> -->
             <div class="mb-3">
               <label for="mySelect">State</label>
-              <select class="form-select" id="mySelect">
+              <select class="form-select me-0" id="mySelect">
                 <option selected disabled>Choose...</option>
                 <option value="AL">Alabama</option>
                 <option value="AK">Alaska</option>
@@ -152,15 +154,16 @@
               </select>
             </div>
             <!-- </label> -->
-          </div>
-          <div class="col-3">
-            <label for="Postal Code">Postal Code</label>
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-sm"
-            />
+            <!-- </div> -->
+            <div class="ms-3">
+              <label for="Postal Code">Postal Code</label>
+              <input
+                type="text"
+                class="form-control me-0"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -169,7 +172,7 @@
           <div>
             <p>We accept</p>
             <div
-              class="bg-secondary text-dark d-flex justify-content-between bg-opacity-50"
+              class="bg-secondary text-dark d-flex justify-content-around bg-opacity-50"
             >
               <div class="form-check form-check-inline">
                 <input
@@ -229,7 +232,10 @@
             placeholder="Leave a comment here"
             id="floatingTextarea"
             style="height: 100px"
-          ></textarea><label class="text-body-secondary fw-light">Add any notes here</label>
+          ></textarea
+          ><label class="text-body-secondary fw-light"
+            >Add any notes here</label
+          >
         </div>
       </div>
       <div class="row d-flex text-end border p-2 bg-secondary bg-opacity-10">
